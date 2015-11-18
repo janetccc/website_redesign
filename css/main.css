@@ -116,6 +116,11 @@ div {
     vertical-align: top;
 }
 
+.col_one_fifth {
+    width: 174px;
+    padding: 9px;
+}
+
 .col_1 {
     width: 142px;
     padding: 9px;
@@ -165,13 +170,34 @@ div {
 HEADER
 ***********************************************************/
 
+header {
+    padding-bottom: 20px;
+}
+
+header div {
+    vertical-align: baseline;
+}
+
+header h1 {
+    margin: 20px 0 0 0;
+}
+
+header.fixed_header {
+    position: fixed;
+}
 
 
 /***********************************************************
 GENERAL STYLE
 ***********************************************************/
 
+.active {
+    font-weight: bold;
+}
 
+h2 {
+    margin: 0;
+}
 
 /***********************************************************
 PORTFOLIO INDEX
@@ -179,7 +205,7 @@ PORTFOLIO INDEX
 
 
 .project_preview {
-    height: 280px;
+    height: auto;
 }
 
 .project_preview:hover {
@@ -193,7 +219,6 @@ PORTFOLIO INDEX
 
 .project_preview a { 
     z-index: 10;
-    background: #f0f;
 }
 
 .max_wrapper {
@@ -232,6 +257,12 @@ PROJECT PAGE
 
 .col_1 a {
     display: block;
+}
+
+.fixed_frame {
+    position: fixed;
+    top: 100px;
+
 }
 
 /***********************************************************

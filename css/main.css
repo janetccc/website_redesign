@@ -105,6 +105,7 @@ GRID SET UP
     margin: auto;
     /*position: relative;*/
     font-size: 0; /* getting rid of space between divs */
+    padding-top: 32px
 }
 
 #wrapper > * {
@@ -116,48 +117,44 @@ div {
     vertical-align: top;
 }
 
-.col_one_fifth {
+.col_one_fifths {
     width: 174px;
     padding: 9px;
 }
 
-.col_1 {
-    width: 142px;
+.col_two_fifths {
+    width: 366px; /* (174*2) + (9*2) */
     padding: 9px;
 }
 
-.col_2 {
-    width: 302px; /* (142*2) + (9*2) */
+.col_three_fifths {
+    width: 558px; /* (174*3) + (9*4) */
     padding: 9px;
 }
 
-.col_3 {
-    width: 462px; /* (142*3) + (9*4) */
+.col_four_fifths {
+    width: 750px; /* (174*4) + (9*6) */
     padding: 9px;
 }
 
-.col_4 {
-    width: 622px; /* (142*4) + (9*6) */
+.col_one {
+    width: 942px; /* (174*5) + (9*8) */
     padding: 9px;
 }
 
-.col_5 {
-    width: 782px; /* (142*5) + (9*8) */
+/*.col_6 {
+    width: 942px;  (142*6) + (9*10) 
     padding: 9px;
-}
-
-.col_6 {
-    width: 942px; /* (142*6) + (9*10) */
-    padding: 9px;
-}
+}*/
 
 .full_width {
-    width: 960px; /* (142*6) + (9*10) */
+    width: 960px; /* (174*6) + (9*10) */
 }
 
 .content_wrapper { /* 960px container, no padding */
     font-size: 0 !important; /* getting rid of space between divs */
-    
+    font-family: Verdana, sans-serif;
+    /*padding-top: 32px;*/
 }
 
 .content_wrapper > *{
@@ -191,21 +188,52 @@ header.fixed_header {
 GENERAL STYLE
 ***********************************************************/
 
+#logo {
+    width: 265px;
+}
+
 .active {
-    font-weight: bold;
+    color: #ec1c24;
+}
+
+h1.project_title {
+    font-size: 30px;
+    margin: 0;
+    font-family: Georgia;
+    font-style: italic;
+    font-variant: bold;
 }
 
 h2 {
     margin: 0;
 }
 
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 24px;
+    color: #737373;
+}
+
 /***********************************************************
 PORTFOLIO INDEX
 ***********************************************************/
+.section_title {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 15pt;
+    color: #737373;
+    text-align: center;
+    margin-bottom: 18px;
+}
 
+.highlight {
+    background: #f3f3f3;
+}
 
 .project_preview {
     height: auto;
+    margin-bottom: 9px;
 }
 
 .project_preview:hover {
@@ -231,21 +259,6 @@ PORTFOLIO INDEX
     /*left: 0;*/
 }
 
-.project_popup {
-    position: absolute;
-    background: #f4f4f4;
-    height: 800px;
-    /*width: 90%;*/
-    /*top: 50%;*/
-    left: 50%;
-    margin-left: -391px; /* 782/2 = 391 */
-    margin-top: 10%;
-    z-index: 10;
-}
-
-.project_popup div {
-    display: inline-block;
-}
 
 /***********************************************************
 PROJECT PAGE
@@ -265,12 +278,18 @@ PROJECT PAGE
 
 }
 
+#nav_bot {
+    margin-top: 100px;
+    border-top: 1px solid #f3f3f3;
+}
+
 /***********************************************************
 FOOTER
 ***********************************************************/
 
 footer {
     /*position: relative;*/
+    color: #737373;
 }
 
 

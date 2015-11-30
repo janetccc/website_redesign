@@ -1,13 +1,6 @@
-$('.gallery').click(function(){
-	$('.max_wrapper').fadeIn();
-	// $('.project_popup').fadeIn();
+$('.gallery').hover(function(){
 	console.log('clickedIn');
 
-	$('.max_wrapper').click(function(){
-		$('.max_wrapper').fadeOut();
-		// $('.project_popup').fadeOut();
-		console.log('clickedOut');
-	});
 });
 
 

@@ -210,8 +210,6 @@ grey (lighter) = #FAFAFA
 
 ***********************************************************/
 
-
-
 h1.project_title {
     font-size: 30px;
     font-family: Georgia;
@@ -235,9 +233,6 @@ a {
 a:hover {
     color: #ec1c24;
 }
-
-
-
 
 
 
@@ -300,16 +295,6 @@ PROJECT PAGE
     margin-bottom: 9px;
 }
 
-.col_1 a {
-    display: block;
-}
-
-.fixed_frame {
-    position: fixed;
-    top: 100px;
-
-}
-
 #project_nav {
     margin-top: 40px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fafafa+0,fafafa+100&amp;0.65+0,0+100 */
@@ -320,7 +305,7 @@ PROJECT PAGE
 }
 
 .current_page img {
-    opacity: 0.6;
+    opacity: 0.6 !important;
 }
 
 /***********************************************************

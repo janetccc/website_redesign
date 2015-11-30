@@ -278,6 +278,10 @@ PROJECT PAGE
 
 }
 
+#project_images img{
+    padding-bottom: 9px;
+}
+
 #nav_bot {
     margin-top: 100px;
     border-top: 1px solid #f3f3f3;

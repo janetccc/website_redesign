@@ -105,7 +105,10 @@ GRID SET UP
     margin: auto;
     /*position: relative;*/
     font-size: 0; /* getting rid of space between divs */
-    padding-top: 32px
+    padding-top: 32px;
+    -webkit-box-shadow: 0px 9px 33px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 9px 33px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 9px 33px -9px rgba(0,0,0,0.75);
 }
 
 #wrapper > * {
@@ -183,37 +186,60 @@ header.fixed_header {
     position: fixed;
 }
 
-
-/***********************************************************
-GENERAL STYLE
-***********************************************************/
-
 #logo {
     width: 265px;
+}
+
+nav a {
+    text-transform: uppercase;
+    margin-right: 24px;
 }
 
 .active {
     color: #ec1c24;
 }
 
+/***********************************************************
+GENERAL STYLE
+
+Main Colors 
+---------------------------
+red= #ec1c24
+grey (darker) = #737373
+grey (lighter) = #FAFAFA
+
+***********************************************************/
+
+
+
 h1.project_title {
     font-size: 30px;
-    margin: 0;
     font-family: Georgia;
     font-style: italic;
     font-variant: bold;
 }
 
-h2 {
+h1, h2, h3, h4 {
     margin: 0;
 }
 
-nav a {
+p {
+    margin-top: 0; 
+}
+
+a {
     text-decoration: none;
-    text-transform: uppercase;
-    margin-right: 24px;
     color: #737373;
 }
+
+a:hover {
+    color: #ec1c24;
+}
+
+
+
+
+
 
 /***********************************************************
 PORTFOLIO INDEX
@@ -228,37 +254,39 @@ PORTFOLIO INDEX
 }
 
 .highlight {
-    background: #f3f3f3;
+     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3f3f3+0,f3f3f3+100&amp;0.65+0,0+100 */
+    background: -moz-linear-gradient(top,  rgba(243,243,243,0.65) 0%, rgba(243,243,243,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(243,243,243,0.65) 0%,rgba(243,243,243,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(243,243,243,0.65) 0%,rgba(243,243,243,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6f3f3f3', endColorstr='#00f3f3f3',GradientType=0 ); /* IE6-9 */
+
 }
 
 .project_preview {
-    height: auto;
     margin-bottom: 9px;
 }
 
 .project_preview:hover {
-    background-color: #ff0 !important;
+    opacity: 1;
 }
 
-.project_preview img { 
-    width: 302px;
-    height: auto;
+.project_preview a img { 
+    opacity: 1;
+    width: 160px;
 }
 
 .project_preview a { 
-    z-index: 10;
+    text-align: center;
+    margin: auto;
 }
 
-.max_wrapper {
-    display: none;
-    height: 100%;
-    width: 960px;
-    position: absolute;
-    top: 0;
-    background: #fff;
-    /*left: 0;*/
+.project_preview img:hover {
+    opacity: 0.6;
 }
 
+.category {
+    text-align: center;
+}
 
 /***********************************************************
 PROJECT PAGE
@@ -266,6 +294,10 @@ PROJECT PAGE
 
 .content_wrapper img {
     width: 100%;
+}
+
+#project_images img {
+    margin-bottom: 9px;
 }
 
 .col_1 a {
@@ -278,13 +310,17 @@ PROJECT PAGE
 
 }
 
-#project_images img{
-    padding-bottom: 9px;
+#project_nav {
+    margin-top: 40px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fafafa+0,fafafa+100&amp;0.65+0,0+100 */
+    background: -moz-linear-gradient(top,  rgba(250,250,250,0.65) 0%, rgba(250,250,250,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(250,250,250,0.65) 0%,rgba(250,250,250,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(250,250,250,0.65) 0%,rgba(250,250,250,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6fafafa', endColorstr='#00fafafa',GradientType=0 ); /* IE6-9 */
 }
 
-#nav_bot {
-    margin-top: 100px;
-    border-top: 1px solid #f3f3f3;
+.current_page img {
+    opacity: 0.6;
 }
 
 /***********************************************************
@@ -292,8 +328,8 @@ FOOTER
 ***********************************************************/
 
 footer {
-    /*position: relative;*/
     color: #737373;
+    margin-top: 40px;
 }
 
 

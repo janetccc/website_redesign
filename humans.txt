@@ -3,7 +3,8 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Jihoon Kang -- Art Director
+    Janet Chan -- Design Assistant
 
 # THANKS
 
